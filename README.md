@@ -13,7 +13,7 @@ cd ../frontend/
 npm install
 npm start
 
-Your application should now be running with the backend on `http://127.0.0.1:8000/` and the frontend on `http://localhost:3000/`.
+Your application should now be running with the backend on `http://127.0.0.1:8000/` and the frontend on `http://localhost:5173/`.
 
 Project structure:
 
