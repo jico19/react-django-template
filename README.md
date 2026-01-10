@@ -18,13 +18,13 @@ Your application should now be running with the backend on `http://127.0.0.1:800
 Project structure:
 
 project-root/
-├── backend/       # Django project
-│   ├── manage.py
-│   ├── app/
-│   └── requirements.txt
-└── frontend/      # React project
-    ├── package.json
-    └── src/
+backend/
+  manage.py
+  app/
+  requirements.txt
+frontend/
+  package.json
+  src/
 
 Notes:
 - Backend uses Simple JWT for authentication.
