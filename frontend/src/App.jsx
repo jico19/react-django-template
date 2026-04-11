@@ -1,13 +1,13 @@
-import axios from "axios"
-
+import { Route, Routes } from "react-router-dom"
+import Homepage from "./pages/Homepage"
 
 
 
 function App() {
   return (
-    <div>
-      <h1>Django x React Template</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />}/>
+    </Routes>
   )
 }
 
