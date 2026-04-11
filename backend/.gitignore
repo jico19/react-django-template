@@ -1,0 +1,32 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables and secrets
+.env
+local_settings.py
+
+# Databases (Local development only)
+db.sqlite3
+db.sqlite3-journal
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Static and Media files
+# (Usually ignored if you want users to upload their own or if you collect them on the server)
+media/
+static_root/
+staticfiles/
+
+# Logs
+*.log
+
+# OS and Editor-specific files
+.DS_Store
+.idea/
+.vscode/
