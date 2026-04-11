@@ -1,33 +1,52 @@
-# React-Django Template with Simple JWT
+# React-Django Template
 
-This is a simple starter template combining Django (backend) and React (frontend) with Simple JWT authentication. Follow the steps below to get it running:
+A minimal starter template combining Django REST Framework and React with Simple JWT authentication.
 
-# Backend setup
+---
+
+## 🚀 Getting Started
+
+### 1. Backend
+
+```bash
 cd backend/
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
+```
 
-# Frontend setup
-cd ../frontend/
+### 2. Frontend
+
+```bash
+cd frontend/
 npm install
-npm start
+npm run dev
+```
 
-Your application should now be running with the backend on `http://127.0.0.1:8000/` and the frontend on `http://localhost:5173/`.
+Once running:
+- **Backend** → http://127.0.0.1:8000/
+- **Frontend** → http://localhost:5173/
 
-Project structure:
+---
 
+## 📁 Project Structure
+
+```
 project-root/
-backend/
-  manage.py
-  app/
-  requirements.txt
-frontend/
-  package.json
-  src/
+├── backend/
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── app/
+└── frontend/
+    ├── package.json
+    └── src/
+```
 
-Notes:
-- Backend uses Simple JWT for authentication.
-- Default database is SQLite (db.sqlite3), configurable in settings.py.
-- Static and media files are ignored in .gitignore.
-- Store sensitive keys in a .env file and include it in .gitignore.
+---
+
+## 📝 Notes
+
+- Auth is handled via **Simple JWT** (access + refresh tokens).
+- Default database is **SQLite** — change it in `settings.py` when needed.
+- Create a **`.env` file** for sensitive keys (e.g. `SECRET_KEY`, `DB_*`) and make sure it's in `.gitignore`.
+- Static and media files are already excluded from version control.
